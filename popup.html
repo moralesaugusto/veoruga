@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="icons/icon48.png" alt="" width="24" height="24" />
+      <span class="title">Veoruga</span>
+    </header>
+
+    <main id="actions" class="actions">
+      <button id="snipBtn" class="action">Snip a region</button>
+      <button id="visibleBtn" class="action">Capture visible area</button>
+      <p id="note" class="note" hidden></p>
+    </main>
+
+    <section id="result" class="result" hidden>
+      <img id="preview" class="preview" alt="Screenshot preview" />
+      <div class="bar">
+        <button id="downloadBtn" class="btn primary">Download</button>
+        <button id="copyBtn" class="btn">Copy</button>
+        <button id="backBtn" class="btn">Back</button>
+      </div>
+    </section>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

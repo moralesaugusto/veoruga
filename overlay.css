@@ -1,0 +1,109 @@
+/* Veoruga overlay styles. Namespaced + !important on structural props so the
+   host page's CSS can't distort the overlay. */
+
+.veoruga-root {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483647 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  cursor: crosshair !important;
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+
+.veoruga-root.veoruga-result {
+  cursor: default !important;
+  background: rgba(0, 0, 0, 0.45) !important;
+}
+
+.veoruga-backdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0.22) !important;
+  pointer-events: none !important;
+  transition: opacity 0.1s ease !important;
+}
+
+.veoruga-box {
+  position: absolute !important;
+  border: 2px solid #4c6ef5 !important;
+  background: transparent !important;
+  /* huge spread darkens everything outside the selection (Firefox-style) */
+  box-shadow: 0 0 0 100000px rgba(0, 0, 0, 0.4) !important;
+  pointer-events: none !important;
+  box-sizing: border-box !important;
+}
+
+.veoruga-hint {
+  position: fixed !important;
+  top: 16px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background: rgba(20, 20, 25, 0.92) !important;
+  color: #fff !important;
+  font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  padding: 8px 14px !important;
+  border-radius: 8px !important;
+  pointer-events: none !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+  transition: opacity 0.1s ease !important;
+}
+
+.veoruga-card {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background: #fff !important;
+  border-radius: 14px !important;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4) !important;
+  padding: 14px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  max-width: 92vw !important;
+  max-height: 92vh !important;
+  box-sizing: border-box !important;
+}
+
+.veoruga-preview {
+  display: block !important;
+  max-width: 80vw !important;
+  max-height: 70vh !important;
+  border-radius: 8px !important;
+  border: 1px solid #e5e7eb !important;
+  object-fit: contain !important;
+}
+
+.veoruga-bar {
+  display: flex !important;
+  gap: 8px !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+}
+
+.veoruga-btn {
+  font: 600 13px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  padding: 9px 16px !important;
+  border-radius: 9px !important;
+  border: 1px solid #d1d5db !important;
+  background: #f9fafb !important;
+  color: #111827 !important;
+  cursor: pointer !important;
+  line-height: 1 !important;
+}
+
+.veoruga-btn:hover {
+  background: #f3f4f6 !important;
+}
+
+.veoruga-btn.veoruga-primary {
+  background: #4c6ef5 !important;
+  border-color: #4c6ef5 !important;
+  color: #fff !important;
+}
+
+.veoruga-btn.veoruga-primary:hover {
+  background: #4361e0 !important;
+}
