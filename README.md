@@ -6,6 +6,8 @@ the PNG or **copy** it to your clipboard.
 
 Everything runs locally. No servers, no tracking, no host permissions.
 
+![Veoruga popup and snip-in-action preview](docs/preview.png)
+
 ## Features
 
 - **Snip a region** — drag to select any part of the page (Firefox-style
