@@ -6,6 +6,11 @@ the PNG or **copy** it to your clipboard.
 
 Everything runs locally. No servers, no tracking, no host permissions.
 
+# Veoruga — Chrome Web Store
+
+https://chromewebstore.google.com/detail/veoruga/fhojimaoedfooldolgjfolcemlaminpd
+
+
 ![Veoruga popup and snip-in-action preview](docs/preview.png)
 
 ## Features
