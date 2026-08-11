@@ -53,7 +53,6 @@ veoruga-extension/
 ├── icons/                 # 16/32/48/128 px PNGs
 ├── make_icons.py          # regenerates the icons (dev only; not shipped)
 ├── PRIVACY.md             # privacy policy
-├── STORE_LISTING.md       # copy for the store listing
 └── LICENSE
 ```
 
